@@ -76,28 +76,16 @@
     console.log(`The most frequently occured word in the sentence is ${mostFrequentWord}`);
 
     let quote4 =  'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
-    let extraction = /\d+/g;
+    let extraction = /\b\d+\b/g;
 
+    // Extracting the numbers from the sentence
     let extracted = quote4.match(extraction);
     console.log(extracted);
-    let sum = extracted.reduce((acc, cur) => acc + cur, 0);
 
-    // sumArray = () => {
-    //     // extracting the numbers from the sentence
-    //     let extraction = /\d+/g;
-    //     let extractedNums = quote4.match(extraction);
-    //     let sum = 0;
+    // Using the reduce method to add the extracted numbers and add them all together.
+    let sum = extracted.reduce((acc, cur) => acc + parseInt(cur), 0);
+    console.log(sum);
 
-    //     // Calculating the total amount
-    //     for (let i = 0; i < extractedNums.length; i+1) {
-    //         console.log(extractedNums[i]);
-    //         // sum += extractedNums[i];
-    //         // console.log(sum);
-    //         // console.log(extractedNum);
-    //     }       
-    //     return sum;
-
-    // }
-    // sumArray();
+    
 
 
