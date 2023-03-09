@@ -17,14 +17,34 @@
     // }
 
     // Compare the values of myAge and yourAge using if … else. Based on the comparison and log the result to console stating who is older (me or you). Use prompt(“Enter your age:”) to get the age as input.
+    // const myAge = 19;
+    // const yourAge = Number(prompt('Enter your age:'));
+    // const uOlder = yourAge - myAge;
+    // const iOlder = myAge - yourAge;
 
-    const myAge = 19;
-    const yourAge = Number(prompt('Enter your age:'));
-    const uOlder = yourAge - myAge;
-    const iOlder = myAge - yourAge;
+    // if (yourAge > myAge) {
+    //     console.log(`You are ${uOlder} years older than me.`);
+    // } else if (myAge > yourAge){
+    //     console.log(`I am ${iOlder} years older than you.`);
+    // }
 
-    if (yourAge > myAge) {
-        console.log(`You are ${uOlder} years older than me.`);
-    } else if (myAge > yourAge){
-        console.log(`I am ${iOlder} years older than you.`);
-    }
+
+    // If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
+    // Using if/else statement
+    // let a = 4;
+    // let b = 3;
+
+    // if (a > b) {
+    //     console.log(`${a} is greater than ${b}`);
+    // } else {
+    //     console.log(`${b} is greater than ${a}`);
+    // }
+
+    // Using tenary operators
+    let a = 4;
+    let b = 3;
+
+    a > b ? console.log(`${a} is greater than ${b}`) : console.log(`${b} is greater than ${a}`);
+
+
+
