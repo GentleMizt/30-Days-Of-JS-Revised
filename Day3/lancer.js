@@ -102,9 +102,20 @@
     const length = Number(prompt('Input length here'));
     const width = Number(prompt('Input width here'));
 
+    // Function that calculates the area of a rectangle
     rectArea = () =>{
         area = length * width;
         alert(`Area of rectangle is ${area}`)
     }
 
     rectArea();
+
+    // Function that calculates the perimeter of rectangle
+    rectPeri = () =>{
+        peri = 2 * (length + width);
+        alert(`Perimeter of the Rectangle is ${peri}`);
+    }
+
+    rectPeri();
+
+    
