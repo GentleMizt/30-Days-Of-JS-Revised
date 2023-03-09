@@ -99,13 +99,27 @@
     // June, July or August, the season is Summer
 
     
-    
-    let userInput = prompt('Input the Month here');
+    // Declaring and assigning the values
+    let userInput = prompt('Input the Month here').toLowerCase();
     let season = ['Autumn', 'Winter', 'Spring', 'Summer'];
+
+    // function to check
     checkSeason = userInput =>{
-        if (userInput === 'September' || userInput === 'October' || userInput === 'November') {
+        if (userInput === 'september' || userInput === 'october' || userInput === 'november') {
             console.log(season[0]);
+        }
+        else if (userInput === 'december' || userInput === 'january' || userInput === 'february') {
+            console.log(season[1]);
+        }
+        else if (userInput === 'march' || userInput === 'april' || userInput === 'may') {
+            console.log(season[2]);
+        }
+        else if (userInput === 'june' || userInput === 'july' || userInput === 'august') {
+            console.log(season[3]);
+        }
+        else{
+            console.log('Invalid Month entered');
         }
     }
 
-    checkSeason();
+    checkSeason(userInput);
