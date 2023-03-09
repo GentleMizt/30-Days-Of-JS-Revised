@@ -99,23 +99,37 @@
 
 
     // Using promt to calculate the area and perimeter of a rectangle
-    const length = Number(prompt('Input length here'));
-    const width = Number(prompt('Input width here'));
+    // const length = Number(prompt('Input length here'));
+    // const width = Number(prompt('Input width here'));
 
-    // Function that calculates the area of a rectangle
-    rectArea = () =>{
-        area = length * width;
-        alert(`Area of rectangle is ${area}`)
-    }
+    // // Function that calculates the area of a rectangle
+    // rectArea = () =>{
+    //     area = length * width;
+    //     alert(`Area of rectangle is ${area}`)
+    // }
 
-    rectArea();
+    // rectArea();
 
-    // Function that calculates the perimeter of rectangle
-    rectPeri = () =>{
-        peri = 2 * (length + width);
-        alert(`Perimeter of the Rectangle is ${peri}`);
-    }
+    // // Function that calculates the perimeter of rectangle
+    // rectPeri = () =>{
+    //     peri = 2 * (length + width);
+    //     alert(`Perimeter of the Rectangle is ${peri}`);
+    // }
 
-    rectPeri();
+    // rectPeri();
+
+
+    // Using promp to calculate the area and circumference of a Circle
+    const radius = prompt('Input the radius');
+    const pi = Math.PI;
+
+    circArea = pi * radius ** 2;
+    circum = 2 * pi * radius;
+
+    alert(`The Area and circumference of the Circle is ${circArea} and ${circum} respectively`);
+
+
+
+
 
     
