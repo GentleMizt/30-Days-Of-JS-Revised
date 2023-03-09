@@ -10,10 +10,12 @@
     // using the Switch Method
     switch (standardAge) {
         case yourAge >= standardAge:
-            'You are old enough to drive'
+            // alert('You are old enough to drive');
+            console.log('You are old enough to drive');
             break;
         case yourAge < standardAge:
-            `you are left with ${remainder} years to drive`
+            // alert(`you are left with ${remainder} years to drive`);
+            console.log(`you are left with ${remainder} years to drive`);
         default:
             break;
     }
