@@ -63,14 +63,35 @@
     console.log(w1.includes('on') || w3.includes('on'));
 
     // Exercise 2
-    
-    // Writing a function using a prompt to get values from the user and then calculating the area of a Triangle
-    calculateArea = () =>{
-        let base = prompt('Input the value of the base')
-        let height = prompt('Input the value of the height')
 
-        let area = 0.5 * base * height;
-        alert(`The area of the triangle is ${area}`);
+    // Writing a function using a prompt to get values from the user and then calculating the area of a Triangle
+    // calculateArea = () =>{
+    //     let base = prompt('Input the value of the base')
+    //     let height = prompt('Input the value of the height')
+
+    //     let area = 0.5 * base * height;
+    //     alert(`The area of the triangle is ${area}`);
+    // }
+
+    // calculateArea();
+
+    // Writing a function that gets the sides of a triangle from the user and then uses it to calculate the perimeter of a triangle
+    calculatePeri = () =>{
+        let s1 = Number(prompt('Input side1 here'));
+        let s2 = Number(prompt('Input side2 here'));
+        let s3 = Number(prompt('Input side3 here'));
+
+        // creating an array and pushing the values of the sides into it
+        const sides = [];
+        sides.push(s1, s2, s3);
+        // declaring the base value of total
+        let total = 0;
+
+        for (let i = 0; i < sides.length; i++) {
+           total += sides[i];
+        };
+
+       alert(`The perimeter of the triangle is ${total}`)
     }
 
-    calculateArea();
+    calculatePeri();
