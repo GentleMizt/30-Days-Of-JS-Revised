@@ -36,6 +36,7 @@
     const date = now2.getDate();
     const hours = now2.getHours();
     const minutes = now2.getMinutes();
+    const seconds = now2.getSeconds();
 
     console.log(`${date}/${month}/${year}  ${hours}:${minutes}`);
 
@@ -163,4 +164,33 @@
     //     console.log(`Your last name, ${lastName} is longer than your first name, ${firstName}`);
     // }
 
+    
+
+    // Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+    // const birthYear = Number(prompt('Enter your Birth year:'))
+
+    // function to calculate the users age
+    // getAge = () => {
+    //     let thisyear = 2023;
+    //     let newAge = thisyear - birthYear;
+    //     let standardAge = 18;
+    //     let remainder = standardAge - newAge;
+
+    //     // checking if the inputed year corresponds with the standard age
+    //     if (newAge >= standardAge) {
+    //         alert(`you are ${newAge}, you are old enough to drive.`)
+    //     } else {
+    //         alert(`you are ${newAge}, you will be allowed to drive after ${remainder} years.`)
+    //     }
+
+    // }
+    // getAge();
+
+
+    // Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live.
+    // const yearsLived =  Number(prompt('Enter number of years lived:'));
+    // secondsInYear = 31536000;
+
+    // secondsLived = yearsLived * secondsInYear;
+    // alert(`you have lived ${secondsLived} seconds`);
     
