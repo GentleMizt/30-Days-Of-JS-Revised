@@ -100,26 +100,107 @@
 
     
     // Declaring and assigning the values
-    let userInput = prompt('Input the Month here').toLowerCase();
-    let season = ['Autumn', 'Winter', 'Spring', 'Summer'];
+    // let userInput = prompt('Input the Month here').toLowerCase();
+    // let season = ['Autumn', 'Winter', 'Spring', 'Summer'];
 
-    // function to check
-    checkSeason = userInput =>{
-        if (userInput === 'september' || userInput === 'october' || userInput === 'november') {
-            console.log(season[0]);
-        }
-        else if (userInput === 'december' || userInput === 'january' || userInput === 'february') {
-            console.log(season[1]);
-        }
-        else if (userInput === 'march' || userInput === 'april' || userInput === 'may') {
-            console.log(season[2]);
-        }
-        else if (userInput === 'june' || userInput === 'july' || userInput === 'august') {
-            console.log(season[3]);
-        }
-        else{
-            console.log('Invalid Month entered');
+    // // function to check
+    // checkSeason = userInput =>{
+    //     if (userInput === 'september' || userInput === 'october' || userInput === 'november') {
+    //         console.log(season[0]);
+    //     }
+    //     else if (userInput === 'december' || userInput === 'january' || userInput === 'february') {
+    //         console.log(season[1]);
+    //     }
+    //     else if (userInput === 'march' || userInput === 'april' || userInput === 'may') {
+    //         console.log(season[2]);
+    //     }
+    //     else if (userInput === 'june' || userInput === 'july' || userInput === 'august') {
+    //         console.log(season[3]);
+    //     }
+    //     else{
+    //         console.log('Invalid Month entered');
+    //     }
+    // }
+
+    // checkSeason(userInput);
+
+
+    // Check if a day is weekend day or a working day. Your script will take day as an input.
+
+    // let userInput = prompt('What is the day today?').toLowerCase();
+
+    // checkDay = userInput =>{
+    //     if (userInput === 'monday') {
+    //         console.log(`${userInput} is a working day`);
+    //     } 
+    //     else if (userInput === 'tuesday'){
+    //         console.log(`${userInput} is a working day`);
+    //     }
+    //     else if (userInput === 'wednesday'){
+    //         console.log(`${userInput} is a working day`);
+    //     }
+    //     else if (userInput === 'thursday'){
+    //         console.log(`${userInput} is a working day`);
+    //     }
+    //     else if (userInput === 'friday'){
+    //         console.log(`${userInput} is a working day`);
+    //     }
+    //     else if (userInput === 'saturday'){
+    //         console.log(`${userInput} is a weekend`);
+    //     }
+    //     else if (userInput === 'sunday'){
+    //         console.log(`${userInput} is a weekend`);
+    //     }
+    //     else{
+    //         console.log('Input the Day');
+    //     }
+    // }
+
+    // checkDay(userInput);
+
+
+    // Write a program which tells the number of days in a month.
+
+    let userInput = prompt('Enter a Month').toLowerCase();
+
+    checkDaysMonth = userInput =>{
+        if (userInput === 'january') {
+            console.log(`${userInput} has 31 days.`);
+
+        } else if (userInput === 'february'){
+            console.log(`${userInput} has 28 days.`);
+
+        } else if (userInput === 'march'){
+            console.log(`${userInput} has 31 days.`);
+
+        } else if (userInput === 'april'){
+            console.log(`${userInput} has 30 days.`);
+
+        } else if (userInput === 'may'){
+            console.log(`${userInput} has 31 days.`);
+
+        } else if (userInput === 'june'){
+            console.log(`${userInput} has 30 days.`);
+
+        } else if (userInput === 'july'){
+            console.log(`${userInput} has 31 days.`);
+
+        } else if (userInput === 'august'){
+            console.log(`${userInput} has 31 days.`);
+
+        } else if (userInput === 'september'){
+            console.log(`${userInput} has 30 days.`);
+
+        } else if (userInput === 'october'){
+            console.log(`${userInput} has 31 days.`);
+
+        } else if (userInput === 'november'){
+            console.log(`${userInput} has 30 days.`);
+
+        } else if (userInput === 'december'){
+            console.log(`${userInput} has 31 days.`);
+
         }
     }
 
-    checkSeason(userInput);
+    checkDaysMonth(userInput);
