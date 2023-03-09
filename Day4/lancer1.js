@@ -59,3 +59,53 @@
     //     console.log(`${num} is an Odd number`);
     // }
 
+
+    // EXERCISE 2
+    // Write a code which can give grades to students according to theirs scores:
+        // 90-100, A
+        // 70-89, B
+        // 60-69, C
+        // 50-59, D
+        // 0-49, F
+
+    // let scores = Number(prompt('Input your Score'));
+
+    // assignScore = scores =>{
+    //     if (scores >= 90 && scores <= 100) {
+    //         console.log('Your Grade is A');
+    //     }  
+    //     else if (scores >= 70 && scores <= 89) {
+    //         console.log('Your Grade is B');
+    //     }
+    //     else if (scores >= 60 && scores <= 69) {
+    //         console.log('Your Grade is C');
+    //     }
+    //     else if (scores >= 50 && scores <= 59) {
+    //         console.log('Your Grade is D');
+    //     }
+    //     else if (scores >= 0 && scores <= 49){
+    //         console.log('Your Grade is F');
+    //     }
+    // }
+
+    // assignScore(scores);
+
+
+    // Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
+
+    // September, October or November, the season is Autumn.
+    // December, January or February, the season is Winter.
+    // March, April or May, the season is Spring
+    // June, July or August, the season is Summer
+
+    
+    
+    let userInput = prompt('Input the Month here');
+    let season = ['Autumn', 'Winter', 'Spring', 'Summer'];
+    checkSeason = userInput =>{
+        if (userInput === 'September' || userInput === 'October' || userInput === 'November') {
+            console.log(season[0]);
+        }
+    }
+
+    checkSeason();
