@@ -31,14 +31,20 @@
 
     // Formatting the values into a readable Format.
     const now2 = new Date();
-    const year = now2.getFullYear();
-    const month = now2.getMonth() + 1;
-    const date = now2.getDate();
-    const hours = now2.getHours();
-    const minutes = now2.getMinutes();
-    const seconds = now2.getSeconds();
+    let year = now2.getFullYear();
+    let month = now2.getMonth() + 1;
+    let date = now2.getDate();
+    let hours = now2.getHours();
+    let minutes = now2.getMinutes();
+    let seconds = now2.getSeconds();
 
-    console.log(`${date}/${month}/${year}  ${hours}:${minutes}`);
+    date = date < 10 ? '0' + date : date;
+    month = month < 10 ? '0' + month : month;
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+
+    console.log(`${year}-${month}-${date} ${hours}:${minutes}`);
+    // console.log(`${date}/${month}/${year}  ${hours}:${minutes}`);
 
     // Exercise 1
 
