@@ -75,23 +75,36 @@
 
     // calculateArea();
 
+
     // Writing a function that gets the sides of a triangle from the user and then uses it to calculate the perimeter of a triangle
-    calculatePeri = () =>{
-        let s1 = Number(prompt('Input side1 here'));
-        let s2 = Number(prompt('Input side2 here'));
-        let s3 = Number(prompt('Input side3 here'));
+    // calculatePeri = () =>{
+    //     let s1 = Number(prompt('Input side1 here'));
+    //     let s2 = Number(prompt('Input side2 here'));
+    //     let s3 = Number(prompt('Input side3 here'));
 
-        // creating an array and pushing the values of the sides into it
-        const sides = [];
-        sides.push(s1, s2, s3);
-        // declaring the base value of total
-        let total = 0;
+    //     // creating an array and pushing the values of the sides into it
+    //     const sides = [];
+    //     sides.push(s1, s2, s3);
+    //     // declaring the base value of total
+    //     let total = 0;
 
-        for (let i = 0; i < sides.length; i++) {
-           total += sides[i];
-        };
+    //     for (let i = 0; i < sides.length; i++) {
+    //        total += sides[i];
+    //     };
 
-       alert(`The perimeter of the triangle is ${total}`)
+    //    alert(`The perimeter of the triangle is ${total}`)
+    // }
+
+    // calculatePeri();
+
+
+    // Using promt to calculate the area and perimeter of a rectangle
+    const length = Number(prompt('Input length here'));
+    const width = Number(prompt('Input width here'));
+
+    rectArea = () =>{
+        area = length * width;
+        alert(`Area of rectangle is ${area}`)
     }
 
-    calculatePeri();
+    rectArea();
