@@ -149,7 +149,10 @@
     // y is 0 when x is -3
 
 
+    // Using tenary operators to check the length of my name and performing actions based on results
 
+    let myName = prompt('Input your name!');
+    myName.length > 7 ? console.log('Your name is long') : console.log('your name is short');
 
 
     
