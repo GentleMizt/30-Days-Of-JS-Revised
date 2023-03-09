@@ -120,13 +120,26 @@
 
 
     // Using promp to calculate the area and circumference of a Circle
-    const radius = prompt('Input the radius');
-    const pi = Math.PI;
+    // const radius = prompt('Input the radius');
+    // const pi = Math.PI;
 
-    circArea = pi * radius ** 2;
-    circum = 2 * pi * radius;
+    // circArea = pi * radius ** 2;
+    // circum = 2 * pi * radius;
 
-    alert(`The Area and circumference of the Circle is ${circArea} and ${circum} respectively`);
+    // alert(`The Area and circumference of the Circle is ${circArea} and ${circum} respectively`);
+
+
+    // Calculating and Comparing Slopes
+    // y = 2 * x - 2
+    let m = 2;
+
+    x1 = 2;
+    y1 = 2;
+    x2 = 6;
+    y2 = 10;
+    
+    slope = (y2 - y1) / (x2 - x1);
+    console.log(slope === m);
 
 
 
