@@ -39,4 +39,16 @@
 
     console.log(`${date}/${month}/${year}  ${hours}:${minutes}`);
 
-    
+    // Exercise 1
+
+    const firstName = 'Olamide';
+    const lastName = 'Iyanda';
+    const country = 'Nigeria';
+    const isMarried = 'No';
+    const year2 = now2.getFullYear();
+
+    console.log(typeof(firstName));
+    console.log(typeof(lastName));
+    console.log(typeof(country));
+    console.log(typeof(isMarried));
+    console.log(typeof(year2));
