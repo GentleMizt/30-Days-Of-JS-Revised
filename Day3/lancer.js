@@ -58,5 +58,19 @@
 
     let w1 = 'python';
     let w2 = 'jargon';
-
+    let w3 = 'dragon'
     console.log(w1.length != w2.length);
+    console.log(w1.includes('on') || w3.includes('on'));
+
+    // Exercise 2
+    
+    // Writing a function using a prompt to get values from the user and then calculating the area of a Triangle
+    calculateArea = () =>{
+        let base = prompt('Input the value of the base')
+        let height = prompt('Input the value of the height')
+
+        let area = 0.5 * base * height;
+        alert(`The area of the triangle is ${area}`);
+    }
+
+    calculateArea();
