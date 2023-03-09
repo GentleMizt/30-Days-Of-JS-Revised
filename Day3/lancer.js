@@ -52,3 +52,11 @@
     console.log(typeof(country));
     console.log(typeof(isMarried));
     console.log(typeof(year2));
+
+    console.log(typeof('10') === typeof(10));
+    console.log(typeof(parseInt('9.8')) === typeof(10));
+
+    let w1 = 'python';
+    let w2 = 'jargon';
+
+    console.log(w1.length != w2.length);
