@@ -161,46 +161,68 @@
 
     // Write a program which tells the number of days in a month.
 
-    let userInput = prompt('Enter a Month').toLowerCase();
+    // let userInput = prompt('Enter a Month').toLowerCase();
 
-    checkDaysMonth = userInput =>{
-        if (userInput === 'january') {
-            console.log(`${userInput} has 31 days.`);
+    // checkDaysMonth = userInput =>{
+    //     if (userInput === 'january') {
+    //         console.log(`${userInput} has 31 days.`);
 
-        } else if (userInput === 'february'){
-            console.log(`${userInput} has 28 days.`);
+    //     } else if (userInput === 'february'){
+    //         console.log(`${userInput} has 28 days.`);
 
-        } else if (userInput === 'march'){
-            console.log(`${userInput} has 31 days.`);
+    //     } else if (userInput === 'march'){
+    //         console.log(`${userInput} has 31 days.`);
 
-        } else if (userInput === 'april'){
-            console.log(`${userInput} has 30 days.`);
+    //     } else if (userInput === 'april'){
+    //         console.log(`${userInput} has 30 days.`);
 
-        } else if (userInput === 'may'){
-            console.log(`${userInput} has 31 days.`);
+    //     } else if (userInput === 'may'){
+    //         console.log(`${userInput} has 31 days.`);
 
-        } else if (userInput === 'june'){
-            console.log(`${userInput} has 30 days.`);
+    //     } else if (userInput === 'june'){
+    //         console.log(`${userInput} has 30 days.`);
 
-        } else if (userInput === 'july'){
-            console.log(`${userInput} has 31 days.`);
+    //     } else if (userInput === 'july'){
+    //         console.log(`${userInput} has 31 days.`);
 
-        } else if (userInput === 'august'){
-            console.log(`${userInput} has 31 days.`);
+    //     } else if (userInput === 'august'){
+    //         console.log(`${userInput} has 31 days.`);
 
-        } else if (userInput === 'september'){
-            console.log(`${userInput} has 30 days.`);
+    //     } else if (userInput === 'september'){
+    //         console.log(`${userInput} has 30 days.`);
 
-        } else if (userInput === 'october'){
-            console.log(`${userInput} has 31 days.`);
+    //     } else if (userInput === 'october'){
+    //         console.log(`${userInput} has 31 days.`);
 
-        } else if (userInput === 'november'){
-            console.log(`${userInput} has 30 days.`);
+    //     } else if (userInput === 'november'){
+    //         console.log(`${userInput} has 30 days.`);
 
-        } else if (userInput === 'december'){
-            console.log(`${userInput} has 31 days.`);
+    //     } else if (userInput === 'december'){
+    //         console.log(`${userInput} has 31 days.`);
 
+    //     }
+    // }
+
+    // checkDaysMonth(userInput);
+
+
+    // Considering Leap years
+
+    let year = parseInt(prompt('Enter the year: '));
+    let month = parseInt(prompt('Enter a month (1-12): '));
+
+    // setting the initial variable to undefined, good programming ethics since i'll still be changing the value later on in the code based on the conditions
+    let days;
+
+    // writing a condition to assign february to 29 days if the year is a Leap year.
+    if (month === 2) {
+        if ((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
+            days = 29;
+        } else {
+            days = 28;
         }
+    } else if ([4, 6, 9, 11].includes(month)){
+        days = 30;
+    } else {
+        days = 31;
     }
-
-    checkDaysMonth(userInput);
