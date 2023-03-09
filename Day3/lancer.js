@@ -131,15 +131,22 @@
 
     // Calculating and Comparing Slopes
     // y = 2 * x - 2
-    let m = 2;
+    // let m = 2;
 
-    x1 = 2;
-    y1 = 2;
-    x2 = 6;
-    y2 = 10;
+    // x1 = 2;
+    // y1 = 2;
+    // x2 = 6;
+    // y2 = 10;
     
-    slope = (y2 - y1) / (x2 - x1);
-    console.log(slope === m);
+    // slope = (y2 - y1) / (x2 - x1);
+    // console.log(slope === m);
+
+
+    // Calculating Quadratic Equations
+    // let x = -3
+    // y = x**2 + 6*x + 9;
+    // console.log(y);
+    // y is 0 when x is -3
 
 
 
