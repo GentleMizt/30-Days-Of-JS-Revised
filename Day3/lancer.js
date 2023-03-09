@@ -41,26 +41,26 @@
 
     // Exercise 1
 
-    const firstName = 'Olamide';
-    const lastName = 'Iyanda';
-    const country = 'Nigeria';
-    const isMarried = 'No';
-    const year2 = now2.getFullYear();
+    // const firstName = 'Olamide';
+    // const lastName = 'Iyanda';
+    // const country = 'Nigeria';
+    // const isMarried = 'No';
+    // const year2 = now2.getFullYear();
 
-    console.log(typeof(firstName));
-    console.log(typeof(lastName));
-    console.log(typeof(country));
-    console.log(typeof(isMarried));
-    console.log(typeof(year2));
+    // console.log(typeof(firstName));
+    // console.log(typeof(lastName));
+    // console.log(typeof(country));
+    // console.log(typeof(isMarried));
+    // console.log(typeof(year2));
 
-    console.log(typeof('10') === typeof(10));
-    console.log(typeof(parseInt('9.8')) === typeof(10));
+    // console.log(typeof('10') === typeof(10));
+    // console.log(typeof(parseInt('9.8')) === typeof(10));
 
-    let w1 = 'python';
-    let w2 = 'jargon';
-    let w3 = 'dragon'
-    console.log(w1.length != w2.length);
-    console.log(w1.includes('on') || w3.includes('on'));
+    // let w1 = 'python';
+    // let w2 = 'jargon';
+    // let w3 = 'dragon'
+    // console.log(w1.length != w2.length);
+    // console.log(w1.includes('on') || w3.includes('on'));
 
     // Exercise 2
 
@@ -150,9 +150,17 @@
 
 
     // Using tenary operators to check the length of my name and performing actions based on results
+    // let myName = prompt('Input your name!');
+    // myName.length > 7 ? console.log('Your name is long') : console.log('your name is short');
 
-    let myName = prompt('Input your name!');
-    myName.length > 7 ? console.log('Your name is long') : console.log('your name is short');
 
+    // Comparison
+    // let firstName = 'Abdulkareem';
+    // let lastName = 'Mapelujo';
+    // if (firstName.length > lastName.length) {
+    //     console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`);
+    // } else {
+    //     console.log(`Your last name, ${lastName} is longer than your first name, ${firstName}`);
+    // }
 
     
