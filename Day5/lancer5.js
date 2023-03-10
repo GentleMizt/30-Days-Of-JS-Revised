@@ -1,3 +1,5 @@
+    import { countries } from "./countries.js";  
+    import { webTechs } from "./webtech.js";
     // DAY 5
     console.log('Day 5 of 30 Days of JavaScript');
 
@@ -78,3 +80,7 @@
    
     console.log(itCompanies.shift());
     console.log(itCompanies);
+
+    // Imported from other JS files
+    console.log(countries);
+    console.log(webTechs);
