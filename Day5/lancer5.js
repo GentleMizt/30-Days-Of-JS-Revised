@@ -33,3 +33,38 @@
     // Removing one array element in the beginning of the array.
 
     // unshift: Adding array element in the beginning of the array.
+
+
+    // EXERCISE 1
+    let arr1 = Array();             //1
+    arr1 = [1,2,3,4,5,6,7];         //2
+    console.log(arr1);
+    console.log(`The first, middle and last elements in the array are ${arr1[0]}, ${arr1[3]}, ${arr1[6]} respectively.`);       //5
+
+    const mixedDataTypes = [
+        'lancer',
+        18,
+        true,
+        { 
+            firstName: 'Abdulkareem',
+            lastName: 'Mapelujo'
+        },
+        hobbies = ['reading', 'coding', 'gaming', 'reading mangas', 'watching animes'],
+        'Nabasf'
+    ]
+    console.log(mixedDataTypes.length);
+
+    const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+    console.log(itCompanies);
+    console.log(itCompanies.length);
+    console.log(`The first, middle and last companies in the array are ${itCompanies[0]}, ${itCompanies[3]}, ${itCompanies[6]} respectively.`);       //5
+    for (let i = 0; i < itCompanies.length; i++) {
+        console.log(itCompanies[i].toUpperCase());
+    }
+    console.log(`${itCompanies[0]}, ${itCompanies[1]}, ${itCompanies[2]}, ${itCompanies[3]}, ${itCompanies[4]}, ${itCompanies[5]} and ${itCompanies[6]} are big IT Companies`);
+
+    // if (itCompanies.includes('Shell')) {
+    //     console.log('Shell is available');
+    // } else {
+    //     console.log('Company not found');
+    // }
