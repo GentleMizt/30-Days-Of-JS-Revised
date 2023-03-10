@@ -56,15 +56,25 @@
 
     const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
     console.log(itCompanies);
-    console.log(itCompanies.length);
-    console.log(`The first, middle and last companies in the array are ${itCompanies[0]}, ${itCompanies[3]}, ${itCompanies[6]} respectively.`);       //5
-    for (let i = 0; i < itCompanies.length; i++) {
-        console.log(itCompanies[i].toUpperCase());
-    }
-    console.log(`${itCompanies[0]}, ${itCompanies[1]}, ${itCompanies[2]}, ${itCompanies[3]}, ${itCompanies[4]}, ${itCompanies[5]} and ${itCompanies[6]} are big IT Companies`);
+    // console.log(itCompanies.length);
+    // console.log(`The first, middle and last companies in the array are ${itCompanies[0]}, ${itCompanies[3]}, ${itCompanies[6]} respectively.`);       //5
+    // for (let i = 0; i < itCompanies.length; i++) {
+    //     console.log(itCompanies[i].toUpperCase());
+    // }
+    // console.log(`${itCompanies[0]}, ${itCompanies[1]}, ${itCompanies[2]}, ${itCompanies[3]}, ${itCompanies[4]}, ${itCompanies[5]} and ${itCompanies[6]} are big IT Companies`);
 
     // if (itCompanies.includes('Shell')) {
     //     console.log('Shell is available');
     // } else {
     //     console.log('Company not found');
     // }
+
+    // console.log(itCompanies.filter(company => company.includes('o')));
+    // console.log(itCompanies.sort());
+    // console.log(itCompanies.sort().reverse());
+
+    // console.log(itCompanies.slice(0, 3), itCompanies.slice(4, 7));
+    // console.log(itCompanies.slice(3,4));
+   
+    console.log(itCompanies.shift());
+    console.log(itCompanies);
